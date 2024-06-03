@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+:root {
+    /* COLORS FOR HOME PAGE */
+    --primary-color: #EC111A;
+    --secondary-color: #FFFFFF;
+    --third-color: #282D31;
+    --blue-color: #070F4D;
+    --shadow-color: #122007;
+    --border-color: #BCBCBC;
+    --content-color: #E7E4DF;
+    --paragraph-color: #53575A;
+    --button-color: #B6AD9F;
+    --hover-color: #9E927F;
+    --input-color: #A8D4E0;
+}
+
+/* START OF MENU */
+
+.navigation-header {    
+    background-color: var(--secondary-color);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    padding: 1em;
+    box-shadow: 0 1px 4px var(--shadow-color);
+}
+
+.navigation-menu {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 60px;
+}
+
+.navigation-button-hamburger {
+    display: none;
+}
+
+.navigation-links a{
+    color: var(--paragraph-color);
+    font-size: 1em;
+    text-decoration: none;
+    padding: 2em;
+    align-items: center;
+}
+
+.navigation-links a:hover {
+    color: red;
+}
+
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+
+.headroom--pinned {
+    transform: translateY(0%);
+}
+
+.headroom-unpinned {
+
+    transform: translateY(-00%);
+}
+
+/* RESPONSIVE BUTTON HAMBURGER */
+@media screen and (max-width: 1023px) {
+    
+    .navigation-header {
+        background-color: var(--secondary-color);
+    }
+
+    .navigation-menu {
+        flex-direction: column;
+    }
+
+    .navigation-container-logo {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .navigation-button-hamburger {
+        display: block;
+        text-decoration: none;
+        color: var(--paragraph-color);
+        font-size: 0.8em;
+        margin-top: 0.8em;
+    }
+
+    .navigation-button-hamburger:hover {
+        color: var(--primary-color);
+    }
+    
+    .navigation-links a{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 0.9em;
+        padding: 1em;
+        color: var(--paragraph-color);
+    }
+
+    .navigation-links a:hover {
+        color: var(--primary-color);
+    }
+
+}
+/* END OF MENU */
+
+.icon-title {
+   font-size: 35px;    
+   display: inline;
+}
+
+.title {
+   display: inline;
+   font-size: 25px;
+   margin-left: 10px;
+   font-weight: 900;
+}
+
+.title-2 {
+   color: var(--primary-color);
+}
+
+
+.text-matri {
+   font-size: 14px;
+}
+
+/* Formulario */
+
+.formulario {
+   border: 6px solid rgb(224, 223, 223);
+   border-radius: 2px;
+   height: 440px;
+   width: 335px;    
+}
+
+.form-entrada {
+   margin-top: -15px;
+}
+
+.matricula {
+   height: 65px;
+   background-color: var(--primary-color);
+   text-align: center ;
+   color: white;
+}
+
+.inputs { 
+   border: 2px solid lightskyblue;
+   margin-left: 12px;
+   margin-top: 10px;
+   width: 300px;
+   border-radius: 5px;
+   text-align:start;
+   line-height: 2;
+   text-indent: 7px;
+}
+
+.title-form {
+   font: bold;
+   font-size: 16px;
+   font-weight: 700;
+   text-align: center;
+   padding: 20px;
+}
+
+.title-matricula {
+   font-size: 30px;
+   font-weight: 700;
+   padding: 10px;
+   text-align: center;
+   font: bold;
+}
+
+
+.input-general{
+   font-size: 12px;
+   margin-top: 13px;
+   margin-left: 24px;
+   font-weight: 500;
+}
+
+.text-span {
+   margin-left: 5px;
+   margin-top: 20px;
+}
+
+.link-terminos {
+   color: black;
+   font-weight: 700;
+}
+
+.input-solic {
+   background-color: black;
+   color: white;
+   width: 280px;
+   margin-top: 18px;
+   margin-left: 25px;
+   border-radius: 5px;
+}
+
+.input-solic:hover {
+   color: rgba(255, 255, 255, 0.829);
+}
+
+@media (max-width: 1400px){
+   .formulario{
+       width: 330px;
+   }
+}
+
+@media (max-width: 1200px){
+   .formulario{
+       height: 460px;
+       width: 300px;
+   }
+   .inputs{
+       width: 260px;
+   }
+   .input-solic {
+       width: 230px;
+   }
+}
+
+@media (max-width: 380px) {
+   .formulario {
+       width: 250px;
+       margin-left: 20px;
+   }
+   .inputs {
+       top: 10px;
+       width: 200px;
+       font-size: 13px;
+   }
+   .input-solic {
+       width: 190px;
+       font-size: 14px;
+   }
+   .title-matricula{
+       font-size: 20px;
+   }
+   .title-form {
+       font-size: 15px;
+   }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevLab - Inicio</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,700,700i,800,800i,900&amp;display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/contacts.css">
+    <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+    <script src="../api/js/jquery.js"></script>
+</head>
+<body>
+    <!-- START OF MENU -->
+    <header id="navigation-header" class="navigation-header">
+        <nav class="navigation-menu">
+            <div class="navigation-container-logo">
+                <a href="index.html">
+                    <img src="../assets/img/company/logo.svg" alt="Logo empresa DevLab" class="img-fluid logo">
+                </a>
+                <a href="#" class="navigation-button-hamburger" id="navigation-button-hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+            <div class="navigation-links start" id="navigation-links">
+                <a href="../../index.html">Inicio</a>
+                <a href="../pages/courses.html">Cursos</a>
+                <a href="../pages/specializations.html">Especializaciones</a>
+                <a href="../pages/contacts.html">Contactos</a>
+                <a href="../pages/virtual_classroom.html">Aula Virtual</a>
+            </div>
+        </nav>
+    </header>
+    <!-- END OF MENU -->
+
+    <br><br><br><br><br><br><br>
+    <!-- START OF VIRTUAL CLASSROOM -->
+    <article class="container">
+        <section class="row section-principal">
+            <section class="col-xs-12 col-sm-12 col-md-8 section-1">
+                <i class="fa-solid fa-book icon-title"></i>              
+                <h1 class="title">Acerca <span class="title-2">del Programa</span></h1><br><br>
+                <p class="text-matri">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores alias magnam ipsam veritatis quibusdam iste asperiores? Dolore delectus pariatur culpa ab tempore voluptas eum fugit rem similique, iusto magni illo! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam debitis molestiae odio deleniti magni. Tempore consequatur dolores error neque! Ab eaque eum mollitia, dolore exercitationem commodi aliquam dolores amet modi.</p>
+
+                <i class="fa-solid fa-user-astronaut icon-title"></i>
+                <h1 class="title">Campo <span class="title-2">Laboral</span></h1><br><br>
+                <p class="text-matri">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis magni eos eum facilis modi. Doloremque illum nisi, atque optio libero incidunt adipisci nobis sint repudiandae esse vel perspiciatis suscipit itaque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque tempore, voluptatibus non dolor explicabo casi consequuntur et, ipsa, quidem nostrum incidunt quam. Recusandae voluptas, eveniet quaerat enim architecto sapiente hic.</p>
+            </section>
+            <section class="col-xs-12 col-sm-12 col-md-4 section-form">
+                <form action="enviar.php" method="post" class="formulario">
+                    <div class="matricula">
+                        <h1 class="title-matricula">¡Matrícula Gratis!</h1>
+                    </div>
+                    <h1 class="title-form">Solicita más información aquí</h1>
+                    <div class="form-entrada">
+                        <input class="inputs" type="text" name="nombres" placeholder="Nombres" required><br>
+                        <input class="inputs" type="text" name="apellidos" placeholder="Apellidos" required><br>
+                        <input class="inputs" type="email" name="email" placeholder="Correo Electrónico" required><br>
+                        <input class="inputs" type="tel" name="celular" placeholder="Teléfono" required><br>
+                        <div class="input-general"><input class="input-check" type="checkbox" required><span class="text-span">Acepto haber leído las <a href="#" class="link-terminos">políticas de privacidad</a> y los <a href="#" class="link-terminos">términos y condiciones.</a></span></div>
+                        <input class="input-solic" type="submit" value="Solicitar">
+                    </div>
+                </form>
+            </section>
+        </section>
+    </article>
+    <!-- END OF VIRTUAL CLASSROOM -->
+
+    <script src="../api/js/menu-flex.js"></script>
+    <script src="../api/js/headroom.min.js"></script>
+</body>
+</html>
